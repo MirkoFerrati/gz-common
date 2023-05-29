@@ -175,6 +175,7 @@ std::string SystemPaths::FindSharedLibrary(const std::string &_libName)
   // TODO(anyone) return list of paths that match if more than one matches?
   for (auto const &possibleName : searchNames)
   {
+    ignerr << "MIRKO6 " << possibleName <<std::endl;
     if (exists(possibleName))
     {
       pathToLibrary = possibleName;
